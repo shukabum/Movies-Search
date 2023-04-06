@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background:linear-gradient(wheat 50%, rgb(133, 230, 133) 50%);
+}
+.title{
+    text-align: center;
+    margin-top: 10rem;
+    font-weight: 900;
+    
+}
+.container{
+    font-size:16px;
+    width: 90vw;
+    max-width:37.5em;
+    padding: 3em 1.8em;
+    background-color: rgb(13, 165, 186); 
+    border: none;
+    border-radius:1.8em;
+    box-shadow: 1rem 2rem 2rem rgba(0,0,0,0.2);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    
+}
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap:1.5rem;
+}
+.search-container input, .search-container button{
+    font-size: 1rem;
+    outline: none;
+    border-radius:0.5rem;
+    border: none;
+    font-weight: 700;
+    padding:0.5em;
+}
+#search-btn{
+    color: bisque;
+    background: black;
+    cursor:pointer
+   
+}
+.search-container input:focus{
+    border:1px  solid rgb(11, 9, 9) ;
+}
+#search-btn:hover{
+    background: rgb(235, 176, 93);
+    color: brown;
+}
+#result{
+    color:whitesmoke;
+}
+.info{
+    position:relative;
+    display: grid;
+    grid-template-columns: 4fr 10fr;
+    margin-top: 1.2rem;
+
+
+}
+.poster{
+    width:100%;
+    box-shadow: 11px 20px 20px  rgba(0,0,0,0.2);
+
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 0px black;
+}
+.rating{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:.2em;
+    margin:0.7em 0em 2rem 0;
+    
+}
+.rating img{
+    width:1.2em;
+}
+h4{
+    font-size: 1.2em;
+    font-weight: 500;
+
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    color:rgb(63, 60, 60);
+    font-weight: 600;
+    margin-top:2rem;
+}
+.genre{
+    display: flex;
+    justify-content: space-around;
+    color:rgb(8, 13, 105); 
+    font-weight: 900;
+    margin-top:2rem;
+}
+.genre div{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5em;
+}
+h3{
+    margin-left: 1rem;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+p{
+    margin-left:1.1rem;
+    margin-bottom: 1rem;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+@media screen and (max-width:600px){
+    .container{
+        font-size:14px;
+    }
+    .poster{
+        margin:auto;
+        width:auto;
+        max-height:10.8em;
+    }
+    .info{
+        grid-template-columns: 1fr;
+    }
+}
