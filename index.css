@@ -32,16 +32,25 @@ body{
 }
 .search-container{
     display: grid;
-    grid-template-columns: 9fr 3fr;
-    gap:1.5rem;
+    grid-template-columns:1fr;
+   
 }
-.search-container input, .search-container button{
+.search-container input{
     font-size: 1rem;
     outline: none;
     border-radius:0.5rem;
     border: none;
     font-weight: 700;
     padding:0.5em;
+}
+button{
+    font-size: 1rem;
+    outline: none;
+    border-radius:0.5rem;
+    border: none;
+    font-weight: 700;
+    padding:0.5em;
+
 }
 #search-btn{
     color: bisque;
